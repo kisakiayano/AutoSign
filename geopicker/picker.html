@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<title>选择位置</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/leaflet/1.9.4/leaflet.css"/>
+<link rel="stylesheet" href="/picker.css"/>
+</head>
+<body>
+<div id="map"></div>
+<div class="search">
+  <input id="kw" type="text" placeholder="输入地点/地址后回车定位"/>
+  <button class="btn primary" id="find">搜索</button>
+</div>
+<div class="tip">点击地图或拖动标记选择位置</div>
+<button class="locate" id="locate">回到当前定位</button>
+<div class="panel">
+  <div class="addr" id="addr">点击地图选择位置</div>
+  <div class="coord" id="coord">经度: --&nbsp;&nbsp;纬度: --</div>
+  <div class="row">
+    <button class="btn" id="cancel">取消</button>
+    <button class="btn primary" id="ok">确定</button>
+  </div>
+</div>
+<script src="https://cdn.bootcdn.net/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script src="/picker.js"></script>
+</body>
+</html>
